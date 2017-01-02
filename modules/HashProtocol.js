@@ -89,7 +89,7 @@ const updateLocation = (location, pathCoder, queryKey, updateHash) => {
 
   let path = pathCoder.encodePath(createPath(location))
 
-  if (state !== undefined) {
+  if (key !== undefined) {
     path = addQueryStringValueToPath(path, queryKey, key)
     saveState(key, state)
   }
