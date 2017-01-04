@@ -17,7 +17,7 @@
     "build-min": "webpack -p modules/index.js umd/history.min.js",
     "build": "node ./scripts/build.js",
     "release": "node ./scripts/release.js",
-    "prepublish": "node ./scripts/build.js",
+    "prepublish": "npm install --ignore-scripts && node ./scripts/build.js",
     "test": "npm run lint && karma start",
     "lint": "eslint modules"
   },
