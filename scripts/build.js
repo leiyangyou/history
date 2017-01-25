@@ -4,9 +4,6 @@ const inInstall = require('in-publish').inInstall
 const prettyBytes = require('pretty-bytes')
 const gzipSize = require('gzip-size')
 
-if (inInstall())
-  process.exit(0)
-
 const exec = (command, env) =>
   execSync(command, { stdio: 'inherit', env })
 
